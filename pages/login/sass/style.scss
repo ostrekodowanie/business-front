@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+$siteBackground: #FDFFFC;
+$fontColor: #011627;
+$primary: #2EC4B6;
+$primaryLight: #CCFFFA;
+$primaryLighter: #E6F9F7;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: -99;
+    background-color: $siteBackground;
+    color: $fontColor;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 5rem;
+    padding: 0 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    small {
+        font-weight: 500;
+    }
+}
+
+.logo {
+    text-decoration: none;
+    color: $fontColor;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 8.2rem;
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 85%;
+        color: #011627;
+    }
+    a:last-child {
+        color: $siteBackground;
+        background-color: $primary;
+        padding: .5em 1em;
+        border-radius: 1em;
+    }
+}
+
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8vw;
+}
+
+.overlay {
+    position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+    backdrop-filter: blur(5px);
+}
+
+.login-container {
+    padding: .5in 2rem .5in 2rem;
+    margin-bottom: 1in;
+    border: 1px solid rgba(1, 22, 39, 0.12);
+    border-radius: 1rem;
+    box-shadow: 11px 14px 24px -18px rgba(66, 68, 90, 1);
+    display: flex;
+    flex-direction: column;
+    h1 {
+        margin: 0 0 2rem 0;
+        color: rgba($fontColor, 0.8);
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    input {
+        font-size: 1.2rem;
+        padding: .8em 1em;
+        border-radius: 8px;
+        background-color: $primaryLighter;
+        border: 1px solid rgba(1, 22, 39, 0.26);
+    }
+    input::placeholder {
+        color: rgba($fontColor, 0.3)
+    }
+    button {
+        font-size: 1.2rem;
+        padding: .8em;
+        background-color: $primary;
+        color: white;
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0eb6a5;
+    }
+}
+
+.form-ui {
+    color: rgba($fontColor, 0.5);
+    padding: .5rem 0;
+    a {
+        text-decoration: none;
+        color: $primary;
+    }
+}
+
+.form-ui:first-of-type {
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1rem 0 1.5rem 0;
+    border-bottom: 1px solid rgba($fontColor, 0.26);
+    a {
+        color: rgba($primary, 0.8);
+    }
+}
+
+@media all and (min-width: 1150px) {
+    .header {
+        padding: 0 14vw;
+        height: 6rem;
+        small {
+            font-size: 1rem;
+        }
+    }
+}
