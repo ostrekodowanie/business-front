@@ -21,6 +21,7 @@ html, body {
     margin: 0;
     padding: 0;
     position: relative;
+    overflow-x: hidden;
     z-index: -99;
     background-color: $siteBackground;
     color: $fontColor;
@@ -549,6 +550,10 @@ html, body {
     }
 
     //section 3
+ 
+    .learn-grid {
+        padding: 0 1in;
+    }
 
     .learn-div {
        min-height: 12rem;
@@ -574,7 +579,7 @@ html, body {
     }
 
     .line-text {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .line-text.left {

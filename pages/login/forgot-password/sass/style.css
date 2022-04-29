@@ -126,13 +126,13 @@ html, body {
 
 .form-ui {
   color: rgba(1, 22, 39, 0.5);
-  padding: 0.5rem 0;
-  margin: 1.5rem 0 0 0;
-  border-top: 1px solid rgba(1, 22, 39, 0.26);
+  padding: 1.5rem 0;
 }
 .form-ui a {
   text-decoration: none;
-  color: #2EC4B6;
+  color: rgba(46, 196, 182, 0.8);
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 @media all and (min-width: 1150px) {

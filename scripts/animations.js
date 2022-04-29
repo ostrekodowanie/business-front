@@ -31,11 +31,11 @@ export function animations() {
     gsap.from('.problem-div', {
         scrollTrigger: {
             trigger: '.problem-div',
-            start: 'top 80%'
+            start: 'top 90%'
         },
-        duration: 0.5,
+        duration: 0.4,
         stagger: 0.1,
-        y: 80,
+        y: 40,
         opacity: 0,
         ease: Power1.easeInOut
     })

@@ -151,4 +151,8 @@ html, body {
   .header small {
     font-size: 1rem;
   }
+
+  .login-container {
+    margin-bottom: 1.5in;
+  }
 }/*# sourceMappingURL=style.css.map */

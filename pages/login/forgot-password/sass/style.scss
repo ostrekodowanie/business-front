@@ -127,12 +127,12 @@ html, body {
 
 .form-ui {
     color: rgba($fontColor, 0.5);
-    padding: .5rem 0;
-    margin: 1.5rem 0 0 0;
-    border-top: 1px solid rgba($fontColor, 0.26);
+    padding: 1.5rem 0;
     a {
         text-decoration: none;
-        color: $primary;
+        color: rgba($primary, 0.8);
+        font-weight: 500;
+        font-size: 1rem;
     }
 }
 
@@ -148,5 +148,3 @@ html, body {
         margin-bottom: 1.5in;
     }
 }
-
-
